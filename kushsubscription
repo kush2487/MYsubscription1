@@ -1,0 +1,19 @@
+import java.util.*;
+public class main{
+    public static void main(String args[]) {
+        Scanner in=new Scanner(System.in);
+        int b=in.nextInt();
+        String[] n={"TOI","HINDU","ET","BM","HT"};
+        double[] a={26,20.5,34,10.5,18};
+        System.out.println("{");
+        for(int i=0;i<a.length;i++){
+            for(int j=i+1;j<a.length;j++){
+                if(a[i]+a[j]<=b){
+                    System.out.println(n[i]+","+n[j]);
+                }
+            }
+        }
+        System.out.println("}");
+        
+    }
+}
